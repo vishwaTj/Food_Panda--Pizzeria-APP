@@ -23,6 +23,7 @@ const Home = () => {
     setFoodItem(response[0]);
     setFoodCat(response[1]);
   };
+  console.log(foodItem);
 
   useEffect(() => {
     loadData();
@@ -60,7 +61,7 @@ const Home = () => {
               <img
                 src="https://source.unsplash.com/random/900x700/?burger"
                 className="d-block w-100  "
-                style={{ filter: "brightness(30%)" }}
+                style={{ filter: "brightness(30%)"}}
                 alt="..."
               />
             </div>
