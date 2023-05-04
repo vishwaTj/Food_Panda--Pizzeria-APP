@@ -12,9 +12,11 @@ export default function Cart() {
     )
   }
 
+
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch("http://localhost:5000/api/auth/orderData", {
+    console.log("userEmail: "+ userEmail);
+    let response = await fetch("http://localhost:5000/api/OrderData", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -32,8 +34,7 @@ export default function Cart() {
   }
 
   let totalPrice = data.reduce((total, food) => total + food.price, 0)
-  console.log("tprice:"+totalPrice);
-  data.map((d)=>{console.log(d)});
+
   return (
     <div>
       <div className='container m-auto mt-5 table-responsive  table-responsive-sm table-responsive-md' >
