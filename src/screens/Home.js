@@ -59,7 +59,7 @@ const Home = () => {
             </div>
             <div className="carousel-item active">
               <img
-                src="https://source.unsplash.com/random/900x700/?burger"
+                src="https://source.unsplash.com/random/900x700/?pizza"
                 className="d-block w-100  "
                 style={{ filter: "brightness(30%)"}}
                 alt="..."
@@ -67,7 +67,7 @@ const Home = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="https://source.unsplash.com/random/900x700/?pastry"
+                src="https://source.unsplash.com/random/900x700/?lavacake"
                 className="d-block w-100 "
                 style={{ filter: "brightness(30%)" }}
                 alt="..."
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
             <div className="carousel-item">
               <img
-                src="https://source.unsplash.com/random/900x700/?barbeque"
+                src="https://source.unsplash.com/random/900x700/?garlicbread"
                 className="d-block w-100 "
                 style={{ filter: "brightness(30%)" }}
                 alt="..."
