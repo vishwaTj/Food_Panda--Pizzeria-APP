@@ -24,8 +24,8 @@ The file structure is defined in following way <br/>
   iii) src -> it is divided into <br/>
                a) components --> the components which repeats mostly are filed into this file<br/>
                b) Pages --> these are the pages example Home,login,signup etc. <br/>
-                   <&nbsp><&nbsp>         It also triggers the api fetch to display data from MongoDB Atlas. <br/>
-                   <&nbsp><&nbsp>         It also triggers the routes of NOdeJs to createusers as well as register orders on cart check out. <br/>
+                   &nbsp;&nbsp;         It also triggers the api fetch to display data from MongoDB Atlas. <br/>
+                   &nbsp;&nbsp;         It also triggers the routes of NOdeJs to createusers as well as register orders on cart check out. <br/>
 
 
 
