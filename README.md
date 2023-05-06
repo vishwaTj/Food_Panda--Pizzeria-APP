@@ -1,9 +1,8 @@
 
 Video PART 
-https://user-images.githubusercontent.com/109414918/236636726-199f7ea0-fa3d-4861-89fc-af520e8a9abd.mp4
 
+https://user-images.githubusercontent.com/109414918/236637617-c676ae4a-2764-42be-b930-9fdd69c82d56.mp4
 
- 
 
 
 
