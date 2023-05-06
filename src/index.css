@@ -17,3 +17,8 @@ code {
   max-height:500px;
   
 }
+
+.navcolour{
+  background-color: black;
+  color: red;
+}

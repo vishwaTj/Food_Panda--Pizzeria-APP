@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+
+.login{
+  width: 900px;
+  border: 2px solid black;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 2px #e2ca13;
+  -moz-box-shadow: 0 0 5px 2px #e2ca13;
+  box-shadow: 0 0 5px 2px #e2ca13;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items:start;
+}
+
+.rightSide{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;  
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-bottom-left-radius: 50px;
+  height: 430px;
+}
+
+.signupPage{
+  height: 620px; 
+}
+
+.leftSide{
+  border-right:1px solid white;
+}
+
+.submission{
+  padding-left: 5px;
+}

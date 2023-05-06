@@ -40,7 +40,6 @@ function MyOrder() {
                                     data.orderData.order_data.slice(0).reverse().map((item) => {
                                         return (
                                             item.map((arrayData,index) => {
-                                                {console.log(arrayData)}
                                                 return (
                                                     <div key={index} >
                                                         {arrayData.Order_date ? <div className='m-auto mt-5'>

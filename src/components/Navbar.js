@@ -4,11 +4,13 @@ import { Link,useNavigate } from "react-router-dom";
 import Cart from "../screens/Cart";
 import Modal from "../Modal";
 import { useCart } from "./ContextReducer";
+import logo from "../Pizzeria.png";
 
 const Navbar = () => {
   let data = useCart(); 
   const navigate = useNavigate();
   const [cartView,setCartView] = useState(false);
+
   const handleLogout=()=>{
      localStorage.removeItem("authToken");
      navigate("/");
@@ -18,11 +20,14 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-success">
+      <nav className="navbar navbar-expand-lg navbar-dark navcolour">
         <div className="container-fluid">
-          <Link className="navbar-brand fs-1 fst-italic" to="/">
+        <img src={logo} alt="pizzeria logo" to="/" style={{objectFit:"fill", height:"100px", width:"130px", cursor:"pointer"}}>
+          
+        </img>
+          {/* <Link className="navbar-brand fs-1 fst-italic" to="/">
             Food Panda
-          </Link>
+          </Link> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -44,7 +49,7 @@ const Navbar = () => {
               {localStorage.getItem("authToken") ? (
                 <li className="nav-item">
                   <Link
-                    className="nav-link active fs-5"
+                    className="nav-link active"
                     aria-current="page"
                     to="/myOrder"
                   >
@@ -60,7 +65,7 @@ const Navbar = () => {
               {(!localStorage.getItem("authToken")) ?
                 <div className="d-flex">
                   <Link
-                    className="btn bg-white text-success mx-1"
+                    className="btn bg-white text-warning mx-1"
                     aria-current="page"
                     to="/login"
                   >
@@ -68,7 +73,7 @@ const Navbar = () => {
                   </Link>
 
                   <Link
-                    className="btn bg-white text-success mx-1"
+                    className="btn bg-white text-warning mx-1"
                     aria-current="page"
                     to="/createuser"
                   >

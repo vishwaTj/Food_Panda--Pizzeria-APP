@@ -53,12 +53,12 @@ const Card = (props) => {
   return (
     <div>
       <div>
-        <div className="card mt-3" style={{ width: "18rem", maxHeight:"360px" }}>
+        <div className="card mt-3 bg-black text-light" style={{ width: "18rem", maxHeight:"360px" }}>
           <img className="card-img-top" style={{height:"140px", objectFit:"fill"}} src={props.foodItem.img} alt="..." />
           <div className="card-body">
             <h5 className="card-title">{props.foodItem.name}</h5>
             <div className='container w-100'>
-                <select className='m-2 h-100 bg-success rounded' onChange={(e)=>setQty(e.target.value)}>
+                <select className='m-2 h-100 bg-warning rounded' onChange={(e)=>setQty(e.target.value)}>
                     {Array.from(Array(6),(e,i)=>{
                       return(
                         <option key={i+1} value={i+1}> {i+1}</option>
@@ -66,7 +66,7 @@ const Card = (props) => {
                     })}
                 </select>
 
-              <select className='m-2 h-100 bg-success rounded' ref={priceRef} onChange={(e)=>setSize(e.target.value)}>
+              <select className='m-2 h-100 bg-warning rounded' ref={priceRef} onChange={(e)=>setSize(e.target.value)}>
                 {priceOptions.map((data)=>{
                     return <option key={data} value={data}>{data}</option>
                 })}
@@ -77,7 +77,7 @@ const Card = (props) => {
               </div>
               <hr>
               </hr>
-              <button className={'btn btn-success justify-center ms-2'}
+              <button className={'btn btn-warning justify-center ms-2'}
                       onClick={handleAddToCart}>
                  Add to Cart
                 </button>
