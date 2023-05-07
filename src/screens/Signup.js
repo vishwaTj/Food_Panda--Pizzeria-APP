@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../Pizzeria.png"
+import { BASE_URL } from '../Services';
 
 const Signup = () => {
 
@@ -9,7 +10,7 @@ const Signup = () => {
     const handleSubmit= async (e)=>{
         e.preventDefault();
 
-        const response = await fetch("http://localhost:5000/api/createuser",{
+        const response = await fetch(`${BASE_URL}/api/createuser`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

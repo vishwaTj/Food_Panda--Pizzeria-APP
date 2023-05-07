@@ -2,16 +2,17 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
+import { BASE_URL } from "../Services";
 
 
 const Home = () => {
   const [search, setSearch] = useState('');
   const [foodCat, setFoodCat] = useState([]);
   const [foodItem, setFoodItem] = useState([]);
-  // http://localhost:5000/api/foodData
+  
 
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/api/foodData", {
+    let response = await fetch(`${BASE_URL}/api/foodData`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -1,7 +1,7 @@
+require("dotenv").config();
 const express = require('express');
 const app = express();
 const PORT = 5000;
-require("dotenv").config();
 const mongoDB = require("./db");
 mongoDB();
 const cors = require('cors');
