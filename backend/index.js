@@ -1,14 +1,17 @@
 const express = require('express');
 const app = express();
 const port = 5000;
+require("dotenv").config();
 const mongoDB = require("./db");
 mongoDB();
 const cors = require('cors');
 app.use(cors());
 
+ const BASE_URL = process.env.BASE_URL;
+
 // //CORS including to avoid error
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:800");
+  res.setHeader("Access-Control-Allow-Origin",BASE_URL);
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accespt"
