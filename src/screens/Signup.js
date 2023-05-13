@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import logo from "../Pizzeria.png"
 import { BASE_URL } from '../Services';
 
 const Signup = () => {
 
     const [credentials, setCredentials] = useState({name:"",email:"",password:"",location:""});
-
+    let navigate = useNavigate();
     const handleSubmit= async (e)=>{
         e.preventDefault();
 
@@ -22,7 +22,8 @@ const Signup = () => {
         console.log(json);
 
         if(!json.success){
-        alert("Enter valid credentials");
+            alert("Enter valid credentials");
+            navigate('/');
         }
     };
 

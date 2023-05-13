@@ -1,4 +1,4 @@
-export const BASE_URL = "https://food-panda-k0c3.onrender.com";
+export const BASE_URL = "http://localhost:5000";
 
 
 // "http://localhost:5000"

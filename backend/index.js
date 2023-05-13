@@ -7,14 +7,14 @@ mongoDB();
 const cors = require('cors');
 app.use(cors());
 
- const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.BASE_URL;
 
 // //CORS including to avoid error
 app.use((req,res,next)=>{
   res.setHeader("Access-Control-Allow-Origin",BASE_URL);
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accespt"
+    "Origin, X-Requested-With, Content-Type, Accept"
   );
   next();
 })
